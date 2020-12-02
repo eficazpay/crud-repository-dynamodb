@@ -1,0 +1,33 @@
+{
+  "name": "crud-repository-dynamodb",
+  "version": "1.0.0",
+  "description": "A library to connect to DynamoDB using NodeJS",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "keywords": [],
+  "scripts": {
+    "build": "tsc",
+    "prepublish": "npm run build",
+    "tslint": "tslint -c tslint.json 'src/**/*.ts'",
+    "test": "npm run build && REGION=localhost DYNAMO_ENDPOINT=http://localhost:8000 node dist/test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eficazpay/crud-repository-dynamodb.git"
+  },
+  "author": "Pablo Hadler",
+  "license": "ISC",
+  "dependencies": {
+    "aws-xray-sdk-core": "^3.2.0",
+    "reflect-metadata": "0.1.13",
+    "uuid": "3.3.2"
+  },
+  "devDependencies": {
+    "@types/aws-sdk": "2.7.0",
+    "@types/es6-promise": "3.3.0",
+    "@types/node": "10.17.35",
+    "@types/uuid": "3.4.5",
+    "tslint": "5.18.0",
+    "typescript": "^4.0.3"
+  }
+}

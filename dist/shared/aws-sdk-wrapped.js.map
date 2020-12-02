@@ -1,0 +1,1 @@
+{"version":3,"file":"aws-sdk-wrapped.js","sourceRoot":"","sources":["../../src/shared/aws-sdk-wrapped.ts"],"names":[],"mappings":";;;;AAAA,6CAA6C;AAC7C,mCAAmC;AAEnC,iGAAiG;AACpF,QAAA,GAAG,GAAG,CAAC,OAAO,CAAC,GAAG,CAAC,QAAQ,IAAI,OAAA,OAAO,CAAC,GAAG,CAAC,2BAA2B,0CAAE,MAAM,IAAG,CAAC;IAC3F,CAAC,CAAC,OAAO,CAAC,UAAU,CAAC,OAAO,CAAC;IAC7B,CAAC,CAAC,OAAO,CAAC"}
