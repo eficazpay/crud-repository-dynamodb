@@ -1,7 +1,9 @@
 {
-  "name": "crud-repository-dynamodb",
+  "name": "@eficazpay/crud-repository-dynamodb",
   "version": "1.0.0",
-  "description": "A library to connect to DynamoDB using NodeJS",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "keywords": [],
