@@ -1,6 +1,6 @@
 {
   "name": "@eficazpay/crud-repository-dynamodb",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
@@ -11,7 +11,7 @@
     "build": "tsc",
     "prepublish": "npm run build",
     "tslint": "tslint -c tslint.json 'src/**/*.ts'",
-    "test": "npm run build && REGION=localhost DYNAMO_ENDPOINT=http://localhost:8000 node dist/test/index.js"
+    "test": "npm run build && set REGION=localhost DYNAMO_ENDPOINT=http://localhost:8000 node dist/test/index.js"
   },
   "repository": {
     "type": "git",

@@ -1,10 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getKey = exports.Key = void 0;
+exports.getKey = exports.KeyDB = void 0;
 require("reflect-metadata");
 const column_decorator_1 = require("./column-decorator");
 const METADATA_KEY = Symbol("id");
-exports.Key = () => {
+exports.KeyDB = () => {
     return (target, property) => {
         const construct = target.constructor;
         const metadata = Reflect.getMetadata(METADATA_KEY, construct) || {};

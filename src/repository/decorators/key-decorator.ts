@@ -3,7 +3,7 @@ import { getColumn } from "./column-decorator";
 
 const METADATA_KEY = Symbol("id");
 
-export const Key = (): PropertyDecorator => {
+export const KeyDB = (): PropertyDecorator => {
   return (target, property) => {
     const construct = target.constructor;
     const metadata = Reflect.getMetadata(METADATA_KEY, construct) || {};

@@ -6,7 +6,7 @@ export class Mapper<T extends { id: string }> {
   public fromItem(item: AttributeMap, entity: new() => T): T {
     const result = new entity();
     for (const symbol of Reflect.getMetadataKeys(entity)) {
-      if ((symbol as Symbol).toString() === `Symbol(column)`) {
+      if ((symbol as Symbol).toString() === `Symbol(columnDB)`) {
         const metadata = Reflect.getMetadata(symbol, entity);
         Object.keys(metadata)
           .forEach((key) => {

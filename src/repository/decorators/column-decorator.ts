@@ -1,8 +1,8 @@
 import "reflect-metadata";
 
-const METADATA_KEY = Symbol("column");
+const METADATA_KEY = Symbol("columnDB");
 
-export const Column = (name: string, serializer?: Function, deserializer?: Function): PropertyDecorator => {
+export const ColumnDB = (name: string, serializer?: Function, deserializer?: Function): PropertyDecorator => {
   return (target, property) => {
     const construct = target.constructor;
     const metadata = Reflect.getMetadata(METADATA_KEY, construct) || {};

@@ -1,9 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getColumn = exports.Column = void 0;
+exports.getColumn = exports.ColumnDB = void 0;
 require("reflect-metadata");
-const METADATA_KEY = Symbol("column");
-exports.Column = (name, serializer, deserializer) => {
+const METADATA_KEY = Symbol("columnDB");
+exports.ColumnDB = (name, serializer, deserializer) => {
     return (target, property) => {
         const construct = target.constructor;
         const metadata = Reflect.getMetadata(METADATA_KEY, construct) || {};

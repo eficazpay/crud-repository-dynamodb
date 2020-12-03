@@ -1,9 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getTable = exports.Table = void 0;
+exports.getTable = exports.TableDB = void 0;
 require("reflect-metadata");
-const METADATA_KEY = Symbol("table");
-exports.Table = (tableName) => {
+const METADATA_KEY = Symbol("tableDB");
+exports.TableDB = (tableName) => {
     return (construct) => {
         const metadata = Reflect.getMetadata(METADATA_KEY, construct) || {};
         metadata[METADATA_KEY] = tableName;

@@ -6,7 +6,7 @@ class Mapper {
     fromItem(item, entity) {
         const result = new entity();
         for (const symbol of Reflect.getMetadataKeys(entity)) {
-            if (symbol.toString() === `Symbol(column)`) {
+            if (symbol.toString() === `Symbol(columnDB)`) {
                 const metadata = Reflect.getMetadata(symbol, entity);
                 Object.keys(metadata)
                     .forEach((key) => {

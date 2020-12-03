@@ -1,20 +1,20 @@
-import { Column } from "../src/repository/decorators/column-decorator";
-import { Key } from "../src/repository/decorators/key-decorator";
-import { Table } from "../src/repository/decorators/table-decorator";
+import { ColumnDB } from "../src/repository/decorators/column-decorator";
+import { KeyDB } from "../src/repository/decorators/key-decorator";
+import { TableDB } from "../src/repository/decorators/table-decorator";
 
-@Table('person')
+@TableDB('person')
 export class Person {
-  @Key()
-  @Column('cd_id')
+  @KeyDB()
+  @ColumnDB('cd_id')
   id: string;
 
-  @Column('ds_name')
+  @ColumnDB('ds_name')
   name: string;
 
-  @Column('dt_birthday')
+  @ColumnDB('dt_birthday')
   birthday: string;
 
-  @Column('bo_active',
+  @ColumnDB('bo_active',
     (data) => data ? 'S' : 'N',
     (data) => !!(data && data.toUpperCase() === 'S')
   )

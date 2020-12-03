@@ -1,6 +1,6 @@
 import { CrudRepository } from "./repository/crud-repository";
-import { Column } from "./repository/decorators/column-decorator";
-import { Key } from "./repository/decorators/key-decorator";
-import { Table } from "./repository/decorators/table-decorator";
+import { ColumnDB } from "./repository/decorators/column-decorator";
+import { KeyDB } from "./repository/decorators/key-decorator";
+import { TableDB } from "./repository/decorators/table-decorator";
 import { Mapper } from "./repository/mapper";
-export { Column, CrudRepository, Key, Mapper, Table };
+export { ColumnDB, CrudRepository, KeyDB, Mapper, TableDB };

@@ -1,8 +1,8 @@
 import "reflect-metadata";
 
-const METADATA_KEY = Symbol("table");
+const METADATA_KEY = Symbol("tableDB");
 
-export const Table = (tableName: string): ClassDecorator => {
+export const TableDB = (tableName: string): ClassDecorator => {
   return (construct) => {
     const metadata = Reflect.getMetadata(METADATA_KEY, construct) || {};
     metadata[METADATA_KEY] = tableName;
